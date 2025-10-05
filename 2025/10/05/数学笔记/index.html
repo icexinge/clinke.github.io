@@ -19,12 +19,12 @@
   <meta name="author" content="clinke">
   <meta name="keywords" content="">
   
-    <meta name="description" content="1、矩阵的迹的性质  线性算子   \operatorname{tr}(A+B) &#x3D; \operatorname{tr}(A) + \operatorname{tr}(B), \quad \operatorname{tr}(cA) &#x3D; c \operatorname{tr}(A) 转置不变性   \operatorname{tr}(A)&#x3D;\operatorname{tr}(A^{T}) 共轭转置">
+    <meta name="description" content="1、矩阵的迹的性质   线性算子  tr (A + B) &#x3D; tr (A) + tr (B),  tr (cA) &#x3D; ctr (A)  转置不变性  tr (A) &#x3D; tr (AT)  共轭转置  $$ tr(A^{H})&#x3D;\overline{tr(A)} $$  循环性质  $$ tr(AB)&#x3D;tr(BA) \\ tr(ABC)&#x3D;tr(CAB)&#x3D;tr(B">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数学笔记">
 <meta property="og:url" content="https://icexinge.github.io/2025/10/05/%E6%95%B0%E5%AD%A6%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1、矩阵的迹的性质  线性算子   \operatorname{tr}(A+B) &#x3D; \operatorname{tr}(A) + \operatorname{tr}(B), \quad \operatorname{tr}(cA) &#x3D; c \operatorname{tr}(A) 转置不变性   \operatorname{tr}(A)&#x3D;\operatorname{tr}(A^{T}) 共轭转置">
+<meta property="og:description" content="1、矩阵的迹的性质   线性算子  tr (A + B) &#x3D; tr (A) + tr (B),  tr (cA) &#x3D; ctr (A)  转置不变性  tr (A) &#x3D; tr (AT)  共轭转置  $$ tr(A^{H})&#x3D;\overline{tr(A)} $$  循环性质  $$ tr(AB)&#x3D;tr(BA) \\ tr(ABC)&#x3D;tr(CAB)&#x3D;tr(B">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-10-05T11:31:02.000Z">
 <meta property="article:modified_time" content="2025-10-05T23:00:48.070Z">
@@ -223,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          755 字
+          359 字
         
       </span>
     
@@ -234,7 +234,7 @@
         
         
         
-          7 分钟
+          3 分钟
         
       </span>
     
@@ -276,104 +276,102 @@
             
               <div class="markdown-body">
                 
-                <h5 id="1、矩阵的迹的性质"><a href="#1、矩阵的迹的性质" class="headerlink" title="1、矩阵的迹的性质"></a>1、矩阵的迹的性质</h5><blockquote>
+                <h5 id="矩阵的迹的性质">1、矩阵的迹的性质</h5>
+<blockquote>
 <ul>
 <li>线性算子</li>
 </ul>
-<script type="math/tex; mode=display">
-\operatorname{tr}(A+B) = \operatorname{tr}(A) + \operatorname{tr}(B), \quad \operatorname{tr}(cA) = c \operatorname{tr}(A)</script><ul>
+<p><span class="math display">tr (<em>A</em> + <em>B</em>) = tr (<em>A</em>) + tr (<em>B</em>),  tr (<em>c</em><em>A</em>) = <em>c</em>tr (<em>A</em>)</span></p>
+<ul>
 <li>转置不变性</li>
 </ul>
-<script type="math/tex; mode=display">
-\operatorname{tr}(A)=\operatorname{tr}(A^{T})</script><ul>
+<p><span class="math display">tr (<em>A</em>) = tr (<em>A</em><sup><em>T</em></sup>)</span></p>
+<ul>
 <li>共轭转置</li>
 </ul>
-<script type="math/tex; mode=display">
-tr(A^{H})=\overline{tr(A)}</script><ul>
+<p><span class="math display">$$
+tr(A^{H})=\overline{tr(A)}
+$$</span></p>
+<ul>
 <li>循环性质</li>
 </ul>
-<script type="math/tex; mode=display">
+<p><span class="math display">$$
 tr(AB)=tr(BA) \\
-tr(ABC)=tr(CAB)=tr(BCA)</script><ul>
+tr(ABC)=tr(CAB)=tr(BCA)
+$$</span></p>
+<ul>
 <li>项式不变性</li>
 </ul>
-<script type="math/tex; mode=display">
-B=P^{-1}AP  \Rightarrow tr(A)=tr(B)</script><ul>
+<p><span class="math display"><em>B</em> = <em>P</em><sup> − 1</sup><em>A</em><em>P</em> ⇒ <em>t</em><em>r</em>(<em>A</em>) = <em>t</em><em>r</em>(<em>B</em>)</span></p>
+<ul>
 <li>特征值之和等于迹</li>
 </ul>
-<script type="math/tex; mode=display">
-tr(A)=\sum_{i=1}^{n}\lambda_{i}</script><ul>
+<p><span class="math display">$$
+tr(A)=\sum_{i=1}^{n}\lambda_{i}
+$$</span></p>
+<ul>
 <li>迹与 Frobenius 范数</li>
 </ul>
-<script type="math/tex; mode=display">
-\|\mathbf{A}\|_{F}^{2} = \sum_{i=1}^{m}\sum_{j=1}^{n} |a_{ij}|^{2} = \operatorname{tr}(\mathbf{A}^{H}\mathbf{A}) = \operatorname{tr}(\mathbf{A}\mathbf{A}^{H})</script><ul>
+<p><span class="math display">$$
+\|\mathbf{A}\|_{F}^{2} = \sum_{i=1}^{m}\sum_{j=1}^{n} |a_{ij}|^{2} = \operatorname{tr}(\mathbf{A}^{H}\mathbf{A}) = \operatorname{tr}(\mathbf{A}\mathbf{A}^{H})
+$$</span></p>
+<ul>
 <li>迹与行列式</li>
 </ul>
-<script type="math/tex; mode=display">
-det(e^{A})=e^{tr(A)}</script><ul>
+<p><span class="math display"><em>d</em><em>e</em><em>t</em>(<em>e</em><sup><em>A</em></sup>) = <em>e</em><sup><em>t</em><em>r</em>(<em>A</em>)</sup></span></p>
+<ul>
 <li>迹与导数</li>
 </ul>
-<script type="math/tex; mode=display">
-\frac{\partial{ {tr}(AB)} }{\partial{A}}=B^{T}</script></blockquote>
-<h5 id="2、在复数域上使用施密特正交化时的内积与实数域不同"><a href="#2、在复数域上使用施密特正交化时的内积与实数域不同" class="headerlink" title="2、在复数域上使用施密特正交化时的内积与实数域不同"></a>2、在复数域上使用施密特正交化时的内积与实数域不同</h5><blockquote>
+<p><span class="math display">$$
+\frac{\partial{ {tr}(AB)} }{\partial{A}}=B^{T}
+$$</span></p>
+</blockquote>
+<h5 id="在复数域上使用施密特正交化时的内积与实数域不同">2、在复数域上使用施密特正交化时的内积与实数域不同</h5>
+<blockquote>
 <ul>
 <li>实数域</li>
 </ul>
-<script type="math/tex; mode=display">
-\langle x,y\rangle \triangleq x^{\mathrm{T}}y=\sum_{i=1}^{n}x_{i}y_{i}</script><ul>
+<p><span class="math display">$$
+\langle x,y\rangle \triangleq x^{\mathrm{T}}y=\sum_{i=1}^{n}x_{i}y_{i}
+$$</span></p>
+<ul>
 <li>复数域</li>
 </ul>
-<script type="math/tex; mode=display">
-\langle x,y\rangle \triangleq x^{\mathrm{T}}y=\sum_{i=1}^{n}x_{i}\overline{y_{i}}</script></blockquote>
-<h5 id="3、柯西施瓦兹不等式的三种形式"><a href="#3、柯西施瓦兹不等式的三种形式" class="headerlink" title="3、柯西施瓦兹不等式的三种形式"></a>3、柯西施瓦兹不等式的三种形式</h5><blockquote>
+<p><span class="math display">$$
+\langle x,y\rangle \triangleq x^{\mathrm{T}}y=\sum_{i=1}^{n}x_{i}\overline{y_{i}}
+$$</span></p>
+</blockquote>
+<h5 id="柯西施瓦兹不等式的三种形式">3、柯西施瓦兹不等式的三种形式</h5>
+<blockquote>
 <ul>
 <li>代数形式</li>
 </ul>
-<script type="math/tex; mode=display">
-\left( \sum_{i=1}^{n}a_ib_i \right)^2 \le \left( \sum_{i=1}^{n}a_i^2 \right) \left( \sum_{i=1}^{n}b_i^2 \right)</script><ul>
+<p><span class="math display">$$
+\left( \sum_{i=1}^{n}a_ib_i \right)^2 \le \left( \sum_{i=1}^{n}a_i^2 \right) \left( \sum_{i=1}^{n}b_i^2 \right)
+$$</span></p>
+<ul>
 <li>向量形式</li>
 </ul>
-<script type="math/tex; mode=display">
-\left| ab \right| \le \left| a \right|\left| b \right|</script><ul>
+<p><span class="math display">|<em>a</em><em>b</em>| ≤ |<em>a</em>||<em>b</em>|</span></p>
+<ul>
 <li>积分形式</li>
 </ul>
-<script type="math/tex; mode=display">
-\left( \int_a^b f(x)g(x)dx\right)^2 = \left( \int_a^b f(x)^2dx \right)\left( \int_a^b g(x)^2dx \right)</script><p><strong>注：柯西施瓦兹不等式对于广义的内积空间同样适用</strong></p>
+<p><span class="math display">(∫<sub><em>a</em></sub><sup><em>b</em></sup><em>f</em>(<em>x</em>)<em>g</em>(<em>x</em>)<em>d</em><em>x</em>)<sup>2</sup> = (∫<sub><em>a</em></sub><sup><em>b</em></sup><em>f</em>(<em>x</em>)<sup>2</sup><em>d</em><em>x</em>)(∫<sub><em>a</em></sub><sup><em>b</em></sup><em>g</em>(<em>x</em>)<sup>2</sup><em>d</em><em>x</em>)</span></p>
+<p><strong>注：柯西施瓦兹不等式对于广义的内积空间同样适用</strong></p>
 </blockquote>
-<h5 id="4、-Taylor-展开式大全"><a href="#4、-Taylor-展开式大全" class="headerlink" title="4、$Taylor$展开式大全"></a>4、$Taylor$展开式大全</h5><blockquote>
-<script type="math/tex; mode=display">
-\begin{align*}
-e^{x} &= \sum_{n=0}^{\infty} \frac{x^{n}}{n !} = 1+x+\frac{x^{2}}{2 !}+\cdots+\frac{x^{n}}{n !}+\cdots, \quad x \in(-\infty,+\infty) \\[1.5ex]
-
-\sin x &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n+1) !} x^{2 n+1} = x-\frac{x^{3}}{3 !}+\frac{x^{5}}{5 !}-\cdots+\frac{(-1)^{n}}{(2 n+1) !} x^{2 n+1}+\cdots, \quad x \in(-\infty,+\infty) \\[1.5ex]
-
-\cos x &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{(2 n) !} x^{2 n} = 1-\frac{x^{2}}{2 !}+\frac{x^{4}}{4 !}-\cdots+\frac{(-1)^{n}}{(2 n) !} x^{2 n}+\cdots, \quad x \in(-\infty,+\infty) \\[1.5ex]
-
-\ln(1+x) &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{n+1} x^{n+1} = x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\cdots+\frac{(-1)^{n}}{n+1} x^{n+1}+\cdots, \quad x \in (-1,1] \\[1.5ex]
-
-\frac{1}{1-x} &= \sum_{n=0}^{\infty} x^{n} = 1+x+x^{2}+\cdots+x^{n}+\cdots, \quad x \in(-1,1) \\[1.5ex]
-
-\frac{1}{1+x} &= \sum_{n=0}^{\infty}(-1)^{n} x^{n} = 1-x+x^{2}-\cdots+(-1)^{n} x^{n}+\cdots, \quad x \in(-1,1) \\[1.5ex]
-
-(1+x)^{\alpha} &= 1+\sum_{n=1}^{\infty} \frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n} \\
-&= 1+\alpha x+\frac{\alpha(\alpha-1)}{2 !}x^{2}+\cdots+\frac{\alpha(\alpha-1) \cdots(\alpha-n+1)}{n !} x^{n}+\cdots, \quad x \in(-1,1) \\[1.5ex]
-
-\arctan x &= \sum_{n=0}^{\infty} \frac{(-1)^{n}}{2 n+1} x^{2 n+1} = x-\frac{x^{3}}{3}+\frac{x^{5}}{5}-\cdots+\frac{(-1)^{n}}{2 n+1} x^{2 n+1}+\cdots, \quad x \in[-1,1] \\[1.5ex]
-
-\arcsin x &= \sum_{n=0}^{\infty} \frac{(2 n) !}{4^{n}(n !)^{2}(2 n+1)} x^{2 n+1} \\
-&= x+\frac{1}{6} x^{3}+\frac{3}{40} x^{5}+\frac{5}{112} x^{7}+\cdots+\frac{(2 n) !}{4^{n}(n !)^{2}(2 n+1)} x^{2 n+1}+\cdots, \quad x \in[-1,1] \\[1.5ex]
-
-\tan x &= \sum_{n=1}^{\infty} \frac{B_{2 n}(-4)^{n}(1-4^{n})}{(2 n) !} x^{2 n-1} \\
-&= x+\frac{1}{3} x^{3}+\frac{2}{15} x^{5}+\frac{17}{315} x^{7}+\cdots, \quad x \in(-\pi/2, \pi/2)
-
-\end{align*}</script><p><strong>注：</strong>$(1+x)^{\alpha}$的收敛域与$\alpha$有关,但收敛半径都是$1$,具体收敛域如下：</p>
-<script type="math/tex; mode=display">
+<h5 id="taylor展开式大全">4、<span class="math inline"><em>T</em><em>a</em><em>y</em><em>l</em><em>o</em><em>r</em></span>展开式大全</h5>
+<blockquote>
+<p>$$  $$</p>
+<p><strong>注：</strong><span class="math inline">(1 + <em>x</em>)<sup><em>α</em></sup></span>的收敛域与<span class="math inline"><em>α</em></span>有关,但收敛半径都是<span class="math inline">1</span>,具体收敛域如下： <span class="math display">$$
 \begin{cases} 
-x \in (-1,1),  & \text{if } \alpha \leq -1 \\
-x \in (-1,1], & \text{if } -1 < \alpha < 0 \\
-x \in [-1,1],  & \text{if } \alpha > 0 
-\end{cases}</script></blockquote>
-<h5 id="5、"><a href="#5、" class="headerlink" title="5、"></a>5、</h5>
+x \in (-1,1),  &amp; \text{if } \alpha \leq -1 \\
+x \in (-1,1], &amp; \text{if } -1 &lt; \alpha &lt; 0 \\
+x \in [-1,1],  &amp; \text{if } \alpha &gt; 0 
+\end{cases}
+$$</span></p>
+</blockquote>
+<h5 id="section">5、</h5>
+
                 
               </div>
             
@@ -755,6 +753,10 @@ x \in [-1,1],  & \text{if } \alpha > 0
   <script  src="/js/local-search.js" ></script>
 
 
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 
